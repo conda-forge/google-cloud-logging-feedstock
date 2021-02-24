@@ -5,9 +5,13 @@ Home: https://github.com/googleapis/python-logging
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-logging-feedstock/blob/master/LICENSE.txt)
 
 Summary: Stackdriver Logging API client library
+
+Development: https://github.com/googleapis/python-logging
+
+Documentation: https://googleapis.dev/python/logging/latest/index.html
 
 The Stackdriver Logging API writes log entries and manages your Stackdriver Logging configuration.
 See the [usage guide](https://googleapis.dev/python/logging/latest/usage.html).
@@ -118,4 +122,5 @@ Feedstock Maintainers
 =====================
 
 * [@parthea](https://github.com/parthea/)
+* [@xylar](https://github.com/xylar/)
 
