@@ -1,6 +1,5 @@
 {% set name = "google-cloud-logging" %}
-{% set version = "1.15.0" %}
-{% set sha256 = "5f7142a28f017ace6b6031e99c26ae1510d55330c9560bd81e308ebfdadfb76a" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,26 +7,25 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 8932ac382eee6af85cd08400a77586dd3139fbf40b61db757c4c492490899741
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.4
-    - pip >=18.1
+    - pip
+    - python >=3.6
   run:
-    - python >=3.4
-    - google-api-core-grpc >=1.15.0,<2.0.0dev
-    - google-cloud-core >=1.1.0,<2.0.0dev
+    - google-api-core-grpc >=1.22.0,<2.0.0dev
+    - google-cloud-core >=1.4.1,<2.0dev
+    - proto-plus >=1.11.0
+    - python >=3.6
 
 test:
   imports:
-    - grpc
-    - google.cloud.client
     - google.cloud.logging
   commands:
     - pip check
