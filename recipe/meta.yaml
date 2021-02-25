@@ -11,16 +11,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python >=3.4
     - pip >=18.1
   run:
-    - python
+    - python >=3.4
     - google-api-core-grpc >=1.15.0,<2.0.0dev
     - google-cloud-core >=1.1.0,<2.0.0dev
 
@@ -29,6 +29,10 @@ test:
     - grpc
     - google.cloud.client
     - google.cloud.logging
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/googleapis/python-logging
@@ -37,7 +41,7 @@ about:
   license_file: LICENSE
   summary: 'Stackdriver Logging API client library'
   description: The Stackdriver Logging API writes log entries and manages your Stackdriver Logging configuration.
-    
+
     See the [usage guide](https://googleapis.dev/python/logging/latest/usage.html).
 
   doc_url: https://googleapis.dev/python/logging/latest/index.html
@@ -46,3 +50,4 @@ about:
 extra:
   recipe-maintainers:
     - parthea
+    - xylar
