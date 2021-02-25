@@ -37,10 +37,8 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Stackdriver Logging API client library'
-  description: The Stackdriver Logging API writes log entries and manages your Stackdriver Logging configuration.
-
-    See the [usage guide](https://googleapis.dev/python/logging/latest/usage.html).
+  summary: Stackdriver Logging API client library
+  description: "The Stackdriver Logging API writes log entries and manages your Stackdriver Logging configuration.\nSee the [usage guide](https://googleapis.dev/python/logging/latest/usage.html)."
 
   doc_url: https://googleapis.dev/python/logging/latest/index.html
   dev_url: https://github.com/googleapis/python-logging
