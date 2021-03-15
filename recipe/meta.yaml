@@ -1,5 +1,5 @@
 {% set name = "google-cloud-logging" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8932ac382eee6af85cd08400a77586dd3139fbf40b61db757c4c492490899741
+  sha256: b5675ce159db4e9c1d755003b76190460766f426a7c3c1519014cdd5ce66e890
 
 build:
   number: 0
@@ -37,10 +37,8 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Stackdriver Logging API client library'
-  description: The Stackdriver Logging API writes log entries and manages your Stackdriver Logging configuration.
-
-    See the [usage guide](https://googleapis.dev/python/logging/latest/usage.html).
+  summary: Stackdriver Logging API client library
+  description: "The Stackdriver Logging API writes log entries and manages your Stackdriver Logging configuration.\nSee the [usage guide](https://googleapis.dev/python/logging/latest/usage.html)."
 
   doc_url: https://googleapis.dev/python/logging/latest/index.html
   dev_url: https://github.com/googleapis/python-logging
