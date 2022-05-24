@@ -1,5 +1,5 @@
 {% set name = "google-cloud-logging" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 452e361e1dcbc28f2208c0805c1a7cbac030764556703d97656d05218b933708
+  sha256: 623476a5d11611687ce278b137f9433b81ecb0394d37c09f857d533a6067b10b
 
 build:
   number: 0
