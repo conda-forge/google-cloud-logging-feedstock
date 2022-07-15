@@ -1,5 +1,5 @@
 {% set name = "google-cloud-logging" %}
-{% set version = "3.2.0" %}
+{% set version = "3.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0c7160e2cd6c6845614e4f880eaae62da20ce27c239818fbda8b29d7a627aee6
+  sha256: a1111c54f75c6db045310cf9e712e6f10d1b7a64eb570b23fb87b0ef7035d4ac
 
 build:
   number: 0
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.7
-    - google-api-core-grpc >=2.8.0,<3.0.0dev
+    - google-api-core-grpc  >=1.32.0,<3.0.0dev,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*
     - google-cloud-appengine-logging >=0.1.0,<2.0.0dev
     - google-cloud-audit-log >=0.1.0,<1.0.0dev
     - google-cloud-core >=2.0.0,<3.0.0dev
