@@ -1,5 +1,5 @@
 {% set name = "google-cloud-logging" %}
-{% set version = "3.2.3" %}
+{% set version = "3.2.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7d63e5d92634f8db675fbd04add8887f9074a81fd42e9b819fba72dd8b524b63
+  sha256: 0ecab8fb6104f9f81b3162999ad94ed65029e9ad44696a4c2ef0ce0bb135d1e9
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - google-cloud-core >=2.0.0,<3.0.0dev
     - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
     - proto-plus >=1.22.0,<2.0.0dev
-    - protobuf >=3.19.0,<5.0.0dev
+    - protobuf >=3.20.2,<5.0.0dev
 
 test:
   imports:
