@@ -1,11 +1,11 @@
-About google-cloud-logging
-==========================
+About google-cloud-logging-feedstock
+====================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-logging-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/googleapis/python-logging
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-logging-feedstock/blob/main/LICENSE.txt)
 
 Summary: Stackdriver Logging API client library
 
