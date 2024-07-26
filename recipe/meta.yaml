@@ -1,13 +1,13 @@
 {% set name = "google-cloud-logging" %}
-{% set version = "3.10.0" %}
+{% set version = "3.11.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-cloud-logging-{{ version }}.tar.gz
-  sha256: d93d347351240ddb14cfe201987a2d32cf9d7f478b8b2fabed3015b425b3274f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: e53205510652df5794f04176ea395c6cc1862a8e8d2bd0678370a2defeb74bff
 
 build:
   number: 0
@@ -27,6 +27,7 @@ requirements:
     - google-cloud-audit-log >=0.1.0,<1.0.0dev
     - google-cloud-core >=2.0.0,<3.0.0dev
     - grpc-google-iam-v1 >=0.12.4,<1.0.0dev
+    - opentelemetry-api >=1.0.0
     - proto-plus >=1.22.0,<2.0.0dev
     - protobuf >=3.19.5,<5.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
