@@ -3,15 +3,15 @@ About google-cloud-logging-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-logging-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/googleapis/python-logging
+Home: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-logging
 
 Package license: Apache-2.0
 
 Summary: Stackdriver Logging API client library
 
-Development: https://github.com/googleapis/python-logging
+Development: https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-logging
 
-Documentation: https://googleapis.dev/python/logging/latest/index.html
+Documentation: https://docs.cloud.google.com/logging/docs
 
 The Stackdriver Logging API writes log entries and manages your Stackdriver Logging configuration.
 See the [usage guide](https://googleapis.dev/python/logging/latest/usage.html).
@@ -20,11 +20,10 @@ Current build status
 ====================
 
 
-<table><tr><td>All platforms:</td>
+<table><tr>
+    <td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9582&branchName=main">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/google-cloud-logging-feedstock?branchName=main">
-      </a>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
     </td>
   </tr>
 </table>
