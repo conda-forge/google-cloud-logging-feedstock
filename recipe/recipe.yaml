@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-cloud-logging
-  version: "3.16.2"
+  version: "3.16.3"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: d65044004d3a2ae6eced1f0118f0c44dc551872ddb837ba815f75d159ca148c8
+  sha256: 5d7924bbb33c066bb43f70d33ba66749ff1c29b207de4c80b2bce1aacd53f676
 
 build:
   number: 0
